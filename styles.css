@@ -1,0 +1,117 @@
+/* Estilos existentes... */
+
+.fila-videos {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.fila-videos h3 {
+    font-size: 1.5rem;
+    color: #0b0b0b; /* Cor tomate */
+    text-decoration: underline;
+}
+
+.video-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.video-item iframe {
+    border: 2px solid #000000; /* Tomate */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-item iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+/* Estilos globais */
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco para contraste */
+}
+
+/* Estilo do título principal (h1) */
+h1 {
+    font-size: 5rem; /* Aumenta bem o tamanho do título */
+    font-weight: 700; /* Deixa o título mais pesado */
+    color: transparent; /* Tornamos o texto transparente para aplicar o gradiente */
+    background: linear-gradient(45deg, #ff6347, #ffe135, #4CAF50); /* Gradiente de várias cores */
+    background-clip: text; /* Aplica o gradiente ao texto */
+    text-align: center;
+    text-transform: uppercase; /* Transforma todas as letras em maiúsculas */
+    letter-spacing: 8px; /* Aumenta o espaçamento entre as letras */
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* Sombra mais forte para dar profundidade */
+    animation: bounce 1s ease infinite; /* Animação de "pulsar" */
+    margin: 40px 0;
+}
+
+/* Animação de pulsação (bounce) para o título */
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); } /* Aumenta o título no meio da animação */
+    100% { transform: scale(1); }
+}
+
+/* Estilo do subtítulo (h2) */
+h2 {
+    font-size: 2.5rem; /* Aumenta o tamanho do subtítulo */
+    font-weight: 600; /* Dá um peso intermediário ao subtítulo */
+    color: #fff; /* Texto branco para contraste no fundo escuro */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra suave no subtítulo */
+    margin-bottom: 10px;
+}
+
+/* Estilo para a seção chamada-texto */
+.chamada-texto {
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* Fila de vídeos */
+.fila-videos {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.fila-videos h3 {
+    font-size: 2rem;
+    color: #ff6347; /* Tomate */
+    text-decoration: underline;
+}
+
+.video-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.video-item iframe {
+    border: 2px solid #ff6347; /* Tomate */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-item iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 99, 71, 0.5);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Fundo escuro para o rodapé */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
